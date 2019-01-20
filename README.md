@@ -9,6 +9,15 @@ This code exports to Texinfo under Org 9.1, but fails with an error in 9.2:
 
 The code that breaks exporting is found at: `04f35fc473`
 
+### Git message
+
+    ox-texinfo: Preserve target name as node.
+
+    * lisp/ox-texinfo.el (org-texinfo--get-node): Use target's value as
+      base for the node name, instead of using `org-export-get-reference'.
+
+### Source Diff
+
     @@ -466,18 +466,25 @@ INFO is a plist used as a communication channel.  See
 
          (defun org-texinfo--get-node (datum info)
