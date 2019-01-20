@@ -43,3 +43,5 @@ The code that breaks exporting is found at: `04f35fc473`
          	  ;; Ensure NAME is unique and not reserved node name "Top".
          	  (while (or (equal name "Top") (rassoc name cache))
 
+
+Undoing the changes allows the export to succeed.
