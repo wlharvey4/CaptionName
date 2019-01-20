@@ -1,0 +1,55 @@
+# -*- mode:org; -*-
+#+TITLE:Hello World in the World
+#+SUBTITLE:A Listing of All the Ways to Say /Hello World/
+#+AUTHOR:HW
+#+DATE:\today
+* Introduction
+  :PROPERTIES:
+  :UNNUMBERED:
+  :END:
+  This is an introduction to /Hello World/.
+* Hello World in Python
+  :PROPERTIES:
+  :DESCRIPTION: Source code for Hello World
+  :ALT_TITLE: HelloWorld Python
+  :END:
+  #+CAPTION[Hello Python]:Hello World in Python
+  #+NAME:src:hello-world-python
+  #+BEGIN_SRC python -n :results output
+  print("Hello World from Python.")
+  #+END_SRC
+
+  #+RESULTS: src:hello-world-python
+  : Hello World from Python.
+
+** Reference To Python HelloWorld
+   See [[src:hello-world-python][Hello World Python]].
+* Hello World in JavaScript
+  :PROPERTIES:
+  :DESCRIPTION: How to say HelloWorld in JavaScript
+  :ALT_TITLE: HelloWorld JS
+  :END:
+  #+CAPTION[Hello JS]:Hello World in JavaScript
+  #+NAME:src:hello-world-js
+  #+BEGIN_SRC js -n :results: output
+  console.log("Hello World from JavaScript.")
+  #+END_SRC
+
+  #+RESULTS: src:hello-world-js
+  : Hello World from JavaScript.
+  : undefined
+
+** Reference to JS HelloWorld
+   JavaScript.  ([[src:hello-world-js][HW JS]])
+* Listings
+  :PROPERTIES:
+  :APPENDIX:
+  :END:
+  #+TEXINFO: @listoffloats Listing
+
+* EXPORT SETTINGS                                                  :noexport:
+#+TEXINFO_CLASS: info
+#+TEXINFO_DIR_CATEGORY:Texinfo
+#+TEXINFO_DIR_TITLE:HelloWorld
+#+TEXINFO_DIR_DESC:How to say HelloWorld in Different Languages
+#+TEXINFO_PRINTED_TITLE:Hello World Around the World
